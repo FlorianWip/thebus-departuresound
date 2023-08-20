@@ -18,8 +18,10 @@ Developer Information
 This mod install-script needs Powershell 5 (this is included in Windows 10 or higher)
 1. Download the current install.bat from the
 [Latest Release Page](https://github.com/FlorianWip/thebus-departuresound/releases/latest/)
-2. Execute the install.bat
-3. Execute the run.bat to start the mod
+2. Execute the ``install.bat`` 
+3. Execute the ``run.bat`` to start the mod
+
+If you want to update the mod, simply run the ``update.bat``
 
 ## Configuration
 After the first run, the app will create a data/ directory.
