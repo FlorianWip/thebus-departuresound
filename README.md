@@ -8,6 +8,7 @@ User Information:
   - [Change Notification Sound](#change-the-notification-sound)
   - [Change Notification Time](#change-the-notification-time)
 - [Credits](#credits)
+
 Developer Information
 - [Dependency](#dependency)
     - [Maven](#maven)
