@@ -1,0 +1,1 @@
+.\java-binary\jdk20\bin\java -jar application.jar
