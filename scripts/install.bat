@@ -1,3 +1,4 @@
+@ECHO OFF
 echo EN: Welcome to the TheBus-DepartureSound installer
 echo DE: Willkommen im TheBus-DepartureSound Installer
 echo
@@ -23,12 +24,9 @@ $url = $response.assets[1].browser_download_url; ^
 (New-Object Net.WebClient).DownloadFile($url, 'application.jar');
 echo EN: Create run.bat
 echo DE: Erstelle run.bat
-@echo off
 echo .\java-binary\jdk20\bin\java -jar application.jar> run.bat
-@echo on
 echo EN: Create update.bat
 echo DE: Erstelle update.bat
-@echo off
 echo del application.jar> update.bat
 echo powershell -Command ^^>> update.bat
 echo $response = Invoke-RestMethod -Uri 'https://api.github.com/repos/FlorianWip/thebus-departuresound/releases/latest'; ^^>> update.bat
@@ -36,7 +34,6 @@ echo $url = $response.assets[1].browser_download_url; ^^>> update.bat
 echo (New-Object Net.WebClient).DownloadFile($url, 'application.jar');>> update.bat
 echo pause >> update.bat
 echo exit >> update.bat
-@echo on
 echo EN: You are now able to double click the file 'run.bat' to start the mod
 echo DE: Sie können nun die 'run.bat' ausführen, wenn sie die Mod starten wollen
 pause
