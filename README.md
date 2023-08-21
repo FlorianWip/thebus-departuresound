@@ -51,7 +51,7 @@ notified can be up to 1 second off
 <dependency>
     <groupId>de.flammenfuchs</groupId>
     <artifactId>thebus-departuresound</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 ### Gradle
@@ -61,7 +61,7 @@ maven {
 }
 ```
 ```
-implementation("de.flammenfuchs:thebus-departuresound:1.0.0")
+implementation("de.flammenfuchs:thebus-departuresound:1.0.1")
 ```
 ## Credits
 A special thanks goes to **ma.this44** for giving me the real departure sound of the

@@ -6,8 +6,9 @@ import lombok.Getter;
 import lombok.SneakyThrows;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 @Getter
 public class FileStructure {
@@ -27,13 +28,8 @@ public class FileStructure {
     private void copyAudioFromAssetsIfNotExists() {
         if (!audioFile.exists()) {
             InputStream audioResource = App.class.getResourceAsStream("/audio.wav");
-            byte[] buffer = new byte[audioResource.available()];
-            audioResource.read(buffer);
-            audioResource.close();
 
-            FileOutputStream outputStream = new FileOutputStream(audioFile);
-            outputStream.write(buffer);
-            outputStream.close();
+            Files.copy(audioResource, Path.of("data/audio.wav"));
         }
     }
 }
